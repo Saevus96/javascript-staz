@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/style.css" rel="Stylesheet">
+    </style>
+</head>
+
+<body>
+    <div class="paint">
+        <div class="paint-bar">
+            <input id="paintSize" type="range" class="paint-size" min="1" max="50" value="5">
+            <output for="paintSize" class="paint-size-val"></output>
+
+            <input type="color" class="paint-color">
+
+            <div class="paint-buttons-cnt">
+                <button data-mode="draw" class="button-mode" type="button">
+                    Draw
+                </button>
+                <button data-mode="line" disabled class="button-mode" type="button">
+                    Line
+                </button>
+                <button data-mode="rectangle" disabled class="button-mode" type="button">
+                    Rectangle
+                </button>
+                <button data-mode="triangle" disabled class="button-mode" type="button">
+                    Triangle
+                </button>
+                <button data-mode="circle" disabled class="button-mode" type="button">
+                    Circle
+                </button>
+            </div>
+        </div>
+        <div class="paint-canvas-cnt">
+        </div>
+    </div>
+    <button class="clear">Wyczyść</button>
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

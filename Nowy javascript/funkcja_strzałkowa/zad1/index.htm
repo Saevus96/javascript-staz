@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Kurs Javascript - Zadanie funkcja strzałkowa</title>
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 2rem;
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 400;
+            color: #444;
+        }
+
+        h1 {
+            color: #F15C5C;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Zadanie funkcja strzałkowa</h1>
+    <p>Zadanie wykonuj wraz z otwartą konstola debugera</p>
+    <script>
+        fetch('https://kursjs.pl/kurs/es6/zadanie-userzy.json')
+            .then(response => response.json())
+            .then(response => {
+                console.log("Wszyscy użytkownicy: ");
+                console.log(response);
+                /*console.log("Wszyscy użytkownicy pełnoletni: ");
+                response.users.forEach(element => {
+                    if (element.age >= 18) {
+                        console.log(element);
+                    }
+                });*/
+
+                /*console.log("Wszyscy użytkownicy z tagiem dolor: ");
+                response.users.forEach(element => {
+                    element.tags.forEach(el => {
+                        if (el == "dolor") {
+                            console.log(element);
+                        }
+                    });
+                });*/
+
+                console.log("Wszyscy użytkownicy są pełnoletni: ");
+                const ageResult = response.users.every(el => el.age >= 18);
+                console.log(ageResult);
+
+                console.log("Niektórzy użytkownicy są pełnoletni: ");
+                const ageResult2 = response.users.some(el => el.age >= 18);
+                console.log(ageResult2);           
+               
+
+
+                //tutaj zacznij wykonywać zadania
+
+                /* Wypisz w konsoli:
+                -----------------
+                - tekst: "Wszyscy użytkownicy"
+                - tablicę z wszystkimi użytkownikami
+
+                - tekst: "Wszyscy użytkownicy pełnoletni:"
+                - tablicę z wszystkimi użytkownikami pełnoletnimi
+                
+
+                - tekst: "Użytkownicy z tagiem "dolor":
+                - tablicę użytkowników którzy mają tag "dolor"
+
+                - tekst: "Wszyscy użytkownicy są pełnoletni:"
+                - prawda/falsz
+
+                - tekst: "Niektórzy użytkownicy są pełnoletni:"
+                - prawda/falsz
+
+                - tekst: "Użytkownicy pisane dużymi literami:"
+                - tablicę TYLKO z nazwami użytkowników pisanymi dużymi literami
+                */
+            });
+    </script>
+
+</body>
+
+</html>

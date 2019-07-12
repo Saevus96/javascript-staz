@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kurs Javascript - zadanie</title>
+</head>
+<style>
+    .main-content {
+        font-size: 1.5rem;
+        margin: 170px auto 20px;
+        color: #555;
+        max-width: 1400px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: #FF6347;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .header-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .header-list-el {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .header-list-el:last-child {
+        border: 0;
+    }
+
+    .header-list-link {
+        color: inherit;
+        display: block;
+        padding: 10px 20px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .header.sticky {
+        height: 60px;
+        background: firebrick;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    @media (max-width:600px) {
+
+        .header,
+        .header.sticky {
+            position: absolute;
+            transition: none;
+            height: 100px;
+            box-shadow: none;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY >= 100) {
+                header.classList.add("sticky");
+                console.log("dodano");
+            } else {
+                header.classList.remove("sticky");
+                console.log("usunieto");
+            }
+        });
+
+    });
+</script>
+
+<body>
+
+    <div class="header">
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li class="header-list-el">
+                    <a href="" class="header-list-link">Strona główna</a>
+                </li>
+                <li class="header-list-el">
+                    <a href="" class="header-list-link">Galeria</a>
+                </li>
+                <li class="header-list-el">
+                    <a href="" class="header-list-link">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias aliquam atque culpa dicta dolores
+            dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero! Inventore, voluptatem! Assumenda
+            deserunt laudantium molestias qui ratione velit, voluptas? Accusamus commodi consequuntur minima molestias
+            necessitatibus nemo placeat, reprehenderit vero. Alias atque consequatur consequuntur, dolores illo iste
+            itaque minus quae repudiandae vero? Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab alias
+            aliquam atque culpa dicta dolores dolorum ea eaque, eligendi enim error mollitia odit rerum sit unde vero!
+            Inventore, voluptatem! Assumenda deserunt laudantium molestias qui ratione velit, voluptas? Accusamus
+            commodi consequuntur minima molestias necessitatibus nemo placeat, reprehenderit vero. Alias atque
+            consequatur consequuntur, dolores illo iste itaque minus quae repudiandae vero?</p>
+    </main>
+
+</body>
+
+</html>

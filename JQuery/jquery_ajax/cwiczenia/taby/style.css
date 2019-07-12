@@ -1,0 +1,42 @@
+.tabs {
+    list-style-type: none;
+    margin: 5px 0 0 0;
+    padding: 0;
+    clear: both;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.tabs a {
+    width: 20%;
+    display: inline-block;
+    height: 3em;
+    margin:2px;
+    background: #eee;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 3em;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+}
+.tabs a.active {
+    background: #EC185D;
+    color:#fff;
+}
+
+/* ---- treść zakładek ---- */
+.tabs-container {
+}
+.tabs-container .tab-content {
+}
+
+.tabs-container.js .tab-content {
+    display: none;
+    padding:1em;
+    font-size:2em;
+    background: #eee;
+    border-radius:2px;
+}
+.tabs-container.js .tab-content.active {
+    display: block;
+}

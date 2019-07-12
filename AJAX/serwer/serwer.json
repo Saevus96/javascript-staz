@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "name": "Marcin",
+      "surname": "Nowak"
+    },
+    {
+      "id": 1,
+      "name": "Alicja",
+      "surname": "Nowak"
+    },
+    {
+      "id": 2,
+      "name": "Arek",
+      "surname": "Krupski"
+    },
+    {
+      "id": 3,
+      "name": "Adam",
+      "surname": "Palczyński"
+    },
+    {
+      "id": 4,
+      "name": "Agata",
+      "surname": "Pietrucha"
+    },
+    {
+      "userId": "1",
+      "body": "czesc",
+      "id": 5
+    },
+    {
+      "userId": "1",
+      "body": "czesc",
+      "id": 6
+    },
+    {
+      "userId": "1",
+      "body": ":)))",
+      "id": 7
+    },
+    {
+      "userId": "1",
+      "body": ":)))",
+      "id": 8
+    }
+  ]
+}

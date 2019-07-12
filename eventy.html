@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .menu-context {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            background: #222;
+            color: #fff;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 300px;
+            padding: 10px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            font-size: 13px;
+        }
+
+        .menu-context li {
+            border-bottom: 1px solid #444;
+            cursor: pointer;
+        }
+
+        .menu-context li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+            transition: 0.5s all;
+        }
+
+        .menu-context li a:hover {
+            background: #F15C5C;
+            color: #fff;
+        }
+
+        .menu-context li:last-child {
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button class="button button-primary button-big" id="buttonTest" type="button">Wpierw podepnij
+            zdarzenie!</button>
+
+        <button class="button" id="buttonTestAdd" type="button">Podepnij zdarzenie</button>
+
+        <button class="button" id="buttonTestRemove" type="button">Odepnij zdarzenie</button>
+
+        <button class="button" id="buttonTestClick" type="button">Kliknij na dużym przycisku</button>
+    </div>
+
+    <script src="eventy.js" defer></script>
+
+    <ul class="menu-context">
+        <li><a href="">Element menu 1</a></li>
+        <li><a href="">Element menu 2</a></li>
+        <li><a href="">Element menu 3</a></li>
+        <li><a href="">Element menu 4</a></li>
+    </ul>
+</body>
+
+</html>

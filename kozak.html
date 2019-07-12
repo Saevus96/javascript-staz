@@ -1,0 +1,32 @@
+<!doctype html>
+<html class="no-js" lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>*{box-sizing: border-box;}body{padding:0;margin:0;height:100vh;display:flex;justify-content:center;align-items:center;}.canvas div{width:30px;height:30px;float:left;}.canvas{font-size:20px;}</style>
+    </head>
+    <body>
+        <div class="canvas">
+            <div class="elem"></div>
+        </div>
+
+        <script>
+        tekst = "";
+        //zmiennych colors i tab w tym zadaniu nie zmieniaj
+        const colors = ['#ffffff', '#F8AA00', '#7E1C03', '#DB0F3B', '#0026FF'];
+        const tab = [[0,0,0,0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,3,3,3,3,3,0,0,0,0,0],[0,0,0,3,3,3,3,3,3,3,3,0,0,0],[0,0,0,2,2,2,1,1,2,1,0,0,0,0],[0,0,2,1,2,1,1,1,2,1,1,1,0,0],[0,0,2,1,2,2,1,1,1,2,1,1,1,0],[0,0,2,2,1,1,1,1,2,2,2,2,0,0],[0,0,0,0,1,1,1,1,1,1,0,0,0,0],[0,0,0,3,3,4,3,3,3,0,0,0,0,0],[0,0,3,3,3,4,3,3,4,3,3,3,0,0],[0,3,3,3,3,4,4,4,4,3,3,3,3,0],[0,1,1,3,4,1,4,4,1,4,3,1,1,0],[0,1,1,1,4,4,4,4,4,4,1,1,1,0],[0,1,1,4,4,4,4,4,4,4,4,1,1,0],[0,0,0,4,4,4,0,0,4,4,4,0,0,0],[0,0,2,2,2,0,0,0,0,2,2,2,0,0],[0,2,2,2,2,0,0,0,0,2,2,2,2,0],[0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+        ];
+
+        for(let i =0; i<tab.length; i++){
+            let row = tab[i];
+            for(let j = 0; j<row.length; j++){
+                tekst += '<div style="background:' + colors[tab[i][j]] + '"></div>';
+            }
+            tekst+='<br>';
+        }     
+        document.querySelector('.canvas').innerHTML = tekst;
+        </script>
+    </body>
+</html>

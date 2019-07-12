@@ -1,0 +1,25 @@
+.game-board {
+    margin: 30px auto;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    width: 550px;
+    height: 444px;
+    border: 2px solid #ddd;
+}
+
+.game-title {
+    position: absolute;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background: #f6da17 url(../assets/title.png) center center no-repeat;
+}
+
+.game-title:hover {
+    background-color: #F7C11A;
+}
+
+.game-score {
+    text-align: center;
+}
